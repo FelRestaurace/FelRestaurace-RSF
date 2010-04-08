@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="surovina" class="java.lang.String"/>
+	<parameter name="stareMn" class="java.lang.String"/>
+	<parameter name="noveMn" class="java.lang.String"/>
+	<parameter name="prodano" class="java.lang.String"/>
+	<parameter name="prodanoPokladnou" class="java.lang.String"/>
+	<parameter name="CenaDlePokladny" class="java.lang.String"/>
+	<parameter name="valid" class="java.lang.String"/>
+	<field name="Název suroviny" class="java.lang.Object"/>
+	<field name="Původní množství" class="java.lang.Object"/>
+	<field name="Nové množství" class="java.lang.Object"/>
+	<field name="Prodáno (dle váhy)" class="java.lang.Object"/>
+	<field name="Prodáno (dle pokladny)" class="java.lang.Object"/>
+	<field name="Rozdíl" class="java.lang.Object"/>
+	<field name="Platná" class="java.lang.Object"/>
+	<background>
+		<band height="13"/>
+	</background>
+	<title>
+		<band height="59">
+			<textField>
+				<reportElement x="0" y="19" width="555" height="34" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="22" isBold="true" isItalic="true" isUnderline="false" pdfEncoding="Cp1250"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="18" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="53" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="58" width="555" height="1"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="31">
+			<textField>
+				<reportElement x="0" y="11" width="106" height="20"/>
+				<textElement>
+					<font size="11" isBold="true" pdfEncoding="Cp1250"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{surovina}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="11" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{prodano}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="106" y="11" width="64" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{stareMn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="11" width="78" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{noveMn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="11" width="84" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{prodanoPokladnou}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="11" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{CenaDlePokladny}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="495" y="11" width="60" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{valid}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22">
+			<textField>
+				<reportElement x="0" y="0" width="106" height="22"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfEncoding="Cp1250"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Název suroviny}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="106" y="0" width="64" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfEncoding="Cp1250"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{Původní množství}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="0" width="84" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{Prodáno (dle pokladny)}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="0" width="62" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{Rozdíl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="495" y="0" width="60" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Platná}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="0" width="78" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfEncoding="Cp1250"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{Nové množství}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="100" height="22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfEncoding="Cp1250"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{Prodáno (dle váhy)}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19"/>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="55"/>
+	</lastPageFooter>
+	<summary>
+		<band height="9"/>
+	</summary>
+</jasperReport>
