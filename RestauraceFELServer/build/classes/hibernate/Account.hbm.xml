@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16.3.2009 21:36:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="hibernate.Account" lazy="false" table="account">
+    <id name="accountId" type="java.lang.Integer">
+      <column name="accountID"/>
+      <generator class="native"/>
+    </id>
+    <property name="name" type="string">
+      <column name="na
+      me" not-null="true"/>
+    </property>
+    <many-to-one class="hibernate.AccountStatusType" name="accountStatusType">
+      <column name="accountStatusTypeId" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="hibernate.Table" name="table">
+      <column name="tableId" not-null="false"/>
+    </many-to-one>
+    <many-to-one class="hibernate.User" name="user">
+      <column name="userId" not-null="false"/>
+    </many-to-one>
+    <many-to-one class="hibernate.DiscountType" name="discountType">
+      <column name="discountTypeId" not-null="false"/>
+    </many-to-one>
+    <property name="isDeleted" type="int">
+      <column name="isDeleted" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

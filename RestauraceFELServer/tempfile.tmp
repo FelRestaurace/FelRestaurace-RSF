@@ -1,0 +1,299 @@
+12.11.2009 22:22:50 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+12.11.2009 22:22:50 ServiceFacadeManager getInstance
+FINER: THROW
+java.rmi.server.ExportException: remote object implements illegal remote interface; nested exception is: 
+	java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:181)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:293)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:235)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:133)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:119)
+	at service.ServiceFacadeManager.<init>(ServiceFacadeManager.java:60)
+	at service.ServiceFacadeManager.getInstance(ServiceFacadeManager.java:82)
+	at server.Main.main(Main.java:32)
+Caused by: java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.Util.checkMethod(Util.java:244)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:223)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:193)
+	at sun.rmi.server.Util.createProxy(Util.java:126)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:179)
+	... 7 more
+12.11.2009 22:22:50 ServiceFacadeCash getInstance
+FINER: THROW
+java.rmi.server.ExportException: remote object implements illegal remote interface; nested exception is: 
+	java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:181)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:293)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:235)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:133)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:119)
+	at service.ServiceFacadeManager.<init>(ServiceFacadeManager.java:60)
+	at service.ServiceFacadeManager.getInstance(ServiceFacadeManager.java:82)
+	at server.Main.main(Main.java:32)
+Caused by: java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.Util.checkMethod(Util.java:244)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:223)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:193)
+	at sun.rmi.server.Util.createProxy(Util.java:126)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:179)
+	... 7 more
+12.11.2009 22:22:50 ServiceFacadeManager initServiceFacadeRMI
+FINER: THROW
+java.rmi.server.ExportException: remote object implements illegal remote interface; nested exception is: 
+	java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:181)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:293)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:235)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:133)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:119)
+	at service.ServiceFacadeManager.<init>(ServiceFacadeManager.java:60)
+	at service.ServiceFacadeManager.getInstance(ServiceFacadeManager.java:82)
+	at server.Main.main(Main.java:32)
+Caused by: java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.Util.checkMethod(Util.java:244)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:223)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:193)
+	at sun.rmi.server.Util.createProxy(Util.java:126)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:179)
+	... 7 more
+12.11.2009 22:22:50 ServiceFacadeCash initServiceFacadeRMI
+FINER: THROW
+java.rmi.server.ExportException: remote object implements illegal remote interface; nested exception is: 
+	java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:181)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:293)
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:235)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:133)
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:119)
+	at service.ServiceFacadeManager.<init>(ServiceFacadeManager.java:60)
+	at service.ServiceFacadeManager.getInstance(ServiceFacadeManager.java:82)
+	at server.Main.main(Main.java:32)
+Caused by: java.lang.IllegalArgumentException: illegal remote method encountered: public abstract hibernate.Uzaverka service.IServiceFacadeManager.createUzaverka(hibernate.User,java.util.Date)
+	at sun.rmi.server.Util.checkMethod(Util.java:244)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:223)
+	at sun.rmi.server.Util.getRemoteInterfaces(Util.java:193)
+	at sun.rmi.server.Util.createProxy(Util.java:126)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:179)
+	... 7 more
+12.11.2009 22:25:39 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+12.11.2009 22:26:52 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+12.11.2009 22:33:31 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 11:24:58 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:03:16 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:04:25 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:06:36 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:12:36 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:13:27 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:16:33 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:24:52 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:35:51 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:37:56 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:39:09 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:49:24 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:49:30 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:50:49 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:51:38 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:54:54 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 13:59:29 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:03:08 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:04:58 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:05:42 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:08:09 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:09:11 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:11:55 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:40:41 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:42:29 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:43:04 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:43:25 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:45:09 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:46:48 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:47:46 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:51:21 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:51:53 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 14:55:15 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:14:03 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:17:44 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:20:44 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:23:47 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:27:27 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:28:31 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:36:43 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:39:00 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:43:22 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:48:06 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:49:26 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:51:18 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 15:54:05 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 17:22:30 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 17:30:42 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 17:31:42 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 17:33:01 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 17:36:02 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 17:37:29 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 17:38:59 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 18:40:20 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 18:46:27 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 18:48:26 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+15.11.2009 20:17:02 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 13:55:30 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 14:53:11 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 14:55:46 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:09:27 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:11:08 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:14:08 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:15:50 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:44:21 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:47:42 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:48:44 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:53:57 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 15:56:15 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 16:02:15 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 16:25:20 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 16:27:11 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 16:28:25 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 18:51:57 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+16.11.2009 19:13:36 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 10:59:33 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 12:15:54 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 12:34:47 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 13:06:56 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 13:09:30 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 13:17:46 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 13:19:36 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 13:22:56 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:23:30 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:28:10 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:30:48 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:31:28 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:32:35 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:35:10 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:39:11 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+17.11.2009 14:40:03 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+18.11.2009 20:53:16 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+19.11.2009 16:35:21 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+19.11.2009 17:47:53 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+20.11.2009 17:39:08 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+<<<<<<< .mine
+20.11.2009 20:35:10 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+20.11.2009 20:57:34 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+21.11.2009 13:02:28 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+22.11.2009 15:45:44 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+=======
+22.11.2009 15:03:25 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+22.11.2009 15:03:56 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+22.11.2009 15:23:54 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+22.11.2009 15:55:19 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+22.11.2009 15:59:52 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+22.11.2009 16:18:34 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+22.11.2009 16:40:18 logger.ServerLogger writeLogMessage
+INFO: Server spusten
+>>>>>>> .r57
