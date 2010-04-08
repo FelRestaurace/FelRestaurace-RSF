@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/gui
+END
+MainFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/restaurace/!svn/ver/77/RestauraceFELPokladna/src/gui/MainFrame.java
+END
+BillDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/gui/BillDialog.java
+END
+SettingsDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/SettingsDialog.form
+END
+keyboardPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/restaurace/!svn/ver/66/RestauraceFELPokladna/src/gui/keyboardPanel.form
+END
+Bill.form
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/restaurace/!svn/ver/67/RestauraceFELPokladna/src/gui/Bill.form
+END
+MoveOrderDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/restaurace/!svn/ver/77/RestauraceFELPokladna/src/gui/MoveOrderDialog.form
+END
+PayOrderDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/restaurace/!svn/ver/64/RestauraceFELPokladna/src/gui/PayOrderDialog.java
+END
+NewAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/restaurace/!svn/ver/67/RestauraceFELPokladna/src/gui/NewAccount.java
+END
+CustomerForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/restaurace/!svn/ver/74/RestauraceFELPokladna/src/gui/CustomerForm.form
+END
+StatusBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/StatusBar.java
+END
+CreateCustomerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/restaurace/!svn/ver/77/RestauraceFELPokladna/src/gui/CreateCustomerForm.java
+END
+ChoosePersonDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChoosePersonDialog.form
+END
+ChooseDiscountTypeDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChooseDiscountTypeDialog.java
+END
+AccountDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/restaurace/!svn/ver/57/RestauraceFELPokladna/src/gui/AccountDialog.java
+END
+PrintDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/gui/PrintDialog.java
+END
+OpenAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/restaurace/!svn/ver/67/RestauraceFELPokladna/src/gui/OpenAccount.java
+END
+CreateOrderDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/65/RestauraceFELPokladna/src/gui/CreateOrderDialog.java
+END
+AccountForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/restaurace/!svn/ver/57/RestauraceFELPokladna/src/gui/AccountForm.java
+END
+ChooseAccountForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/77/RestauraceFELPokladna/src/gui/ChooseAccountForm.java
+END
+BillHeaderPart.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/restaurace/!svn/ver/66/RestauraceFELPokladna/src/gui/BillHeaderPart.java
+END
+ChooseAccountStatusTypeDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChooseAccountStatusTypeDialog.java
+END
+BillDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/BillDialog.form
+END
+PayOrderDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/PayOrderDialog.form
+END
+NewAccount.form
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/restaurace/!svn/ver/66/RestauraceFELPokladna/src/gui/NewAccount.form
+END
+CreateCustomerForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/restaurace/!svn/ver/74/RestauraceFELPokladna/src/gui/CreateCustomerForm.form
+END
+ChooseDiscountTypeDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChooseDiscountTypeDialog.form
+END
+AccountDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/AccountDialog.form
+END
+PrintDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/gui/PrintDialog.form
+END
+LogingDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/restaurace/!svn/ver/66/RestauraceFELPokladna/src/gui/LogingDialog.java
+END
+OpenAccount.form
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/restaurace/!svn/ver/67/RestauraceFELPokladna/src/gui/OpenAccount.form
+END
+CreateOrderDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/CreateOrderDialog.form
+END
+AccountForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/AccountForm.form
+END
+ChooseAccountForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChooseAccountForm.form
+END
+CreateAccountForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/57/RestauraceFELPokladna/src/gui/CreateAccountForm.java
+END
+BillHeaderPart.form
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/restaurace/!svn/ver/66/RestauraceFELPokladna/src/gui/BillHeaderPart.form
+END
+ChooseAccountStatusTypeDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChooseAccountStatusTypeDialog.form
+END
+ChooseTableDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChooseTableDialog.java
+END
+MainJFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/restaurace/!svn/ver/67/RestauraceFELPokladna/src/gui/MainJFrame.java
+END
+SettingsDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/SettingsDialog.java
+END
+keyboardPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/restaurace/!svn/ver/66/RestauraceFELPokladna/src/gui/keyboardPanel.java
+END
+LogingDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/restaurace/!svn/ver/66/RestauraceFELPokladna/src/gui/LogingDialog.form
+END
+Bill.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/restaurace/!svn/ver/67/RestauraceFELPokladna/src/gui/Bill.java
+END
+MoveOrderDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/restaurace/!svn/ver/77/RestauraceFELPokladna/src/gui/MoveOrderDialog.java
+END
+AbstractDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/AbstractDialog.java
+END
+CustomerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/restaurace/!svn/ver/79/RestauraceFELPokladna/src/gui/CustomerForm.java
+END
+CreateAccountForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/CreateAccountForm.form
+END
+ChoosePersonDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChoosePersonDialog.java
+END
+AbstractForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/AbstractForm.java
+END
+ChooseTableDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/gui/ChooseTableDialog.form
+END
+MainJFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/gui/MainJFrame.form
+END

@@ -1,0 +1,596 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+ * CreateAccountForm.java
+ *
+ * Created on 5.4.2009, 11:31:27
+ */
+package gui;
+
+import java.awt.Graphics;
+import java.awt.Insets;
+import java.io.FileNotFoundException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import service.ConfigParser;
+import service.ServiceFacade;
+import service.Validator;
+
+/**
+ * Trida reprezentujici GUI formular pro vytvareni noveho uctu.
+ *
+ * @author Tomas Hnizdil
+ */
+public class CreateAccountForm extends AbstractForm {
+
+    private ChooseTableDialog chooseTableDialog = null;
+    private ChoosePersonDialog choosePersonDialog = null;
+    private ChooseDiscountTypeDialog chooseDiscountTypeDialog = null;
+    private ChooseAccountStatusTypeDialog chooseAccountStatusTypeDialog = null;
+    private StatusBar statusBar = null;
+    private JFrame parent = null;
+    ImageIcon image = new ImageIcon("images/backgroundpane-bg.jpg");
+    /**
+     * Konstruktor tridy CreateAccountForm.
+     *
+     * @param parent
+     * @param bar
+     * @throws java.rmi.RemoteException
+     * @throws java.rmi.NotBoundException
+     * @throws java.io.FileNotFoundException
+     */
+    public CreateAccountForm(JFrame parent, StatusBar bar) throws FileNotFoundException, NotBoundException, RemoteException {
+        this.parent = parent;
+        this.statusBar = bar;
+        keyboardPanel keyboard = new keyboardPanel();
+        
+        initComponents();
+        initTable();
+       // CreateAccountForm.billPanel.add(keyboard);
+        //this.keyboardPanel.setVisible(true);
+        refresh();
+        clearFields();
+    }
+
+    /**
+     * Metoda prenastavuje statusBar.
+     *
+     * @throws java.rmi.RemoteException
+     * @throws java.rmi.NotBoundException
+     * @throws java.io.FileNotFoundException
+     */
+    protected void refresh() throws FileNotFoundException, NotBoundException, RemoteException {
+        statusBar.setMessage("Tento formulář slouží k vytváření nového účtu.");
+    }
+
+    /**
+     * Metoda kontrolujici spravnost vyplnenych udaju.
+     *
+     * @return Vraci index urcujici vstupni komponentu, ktera obsahuje
+     * neplatny vstup. Pokud je vse vporadku tak navraci 0.
+     */
+    protected int isValidInput() {
+        if (!Validator.isText(jTextFieldName)) return 1;
+        if (!Validator.isText(jTextFieldAccountStatusType)) return 2;
+        return 0;
+    }
+
+    /**
+     * Metoda inicializujici tabulku.          
+     */
+    protected void initTable() {
+    }
+
+    /**
+     * Metoda aktualizuje tabulku.
+     *
+     * @throws java.rmi.RemoteException
+     * @throws java.rmi.NotBoundException
+     * @throws java.io.FileNotFoundException
+     */
+    protected void refreshTable() throws FileNotFoundException, NotBoundException, RemoteException {
+    }
+
+    /**
+     * Metoda navraci tabulku (instanci tridy JTable).
+     *
+     * @return instance tridy JTable
+     */
+    public JTable getTable() {
+        return null;
+    }
+
+    /**
+     * Metoda nahraje do vstupniho pole hodnotu parametru predavaneho z dialogu
+     * ChoosePersonDialog.
+     *
+     * @param person
+     */
+    protected void fillPerson(String person) {
+        jTextFieldPerson.setText(person);
+    }
+
+    /**
+     * Metoda nahraje do vstupniho pole hodnotu parametru predavaneho z dialogu
+     * ChooseTaleDialog.
+     *
+     * @param table
+     */
+    protected void fillTable(String table) {
+        jTextFieldTable.setText(table);
+    }
+
+    /**
+     * Metoda nahraje do vstupniho pole hodnotu parametru predavaneho z dialogu
+     * ChooseDiscountTypeDialog.
+     *
+     * @param discountType
+     */
+    protected void fillDiscountType(String discountType) {
+        jTextFieldDiscountType.setText(discountType);
+    }
+
+    /**
+     * Metoda nahraje do vstupniho pole hodnotu parametru predavaneho z dialogu
+     * ChooseAccountStatusTypeDialog.
+     *
+     * @param accountStatusType
+     */
+    protected void fillAccountStatusType(String accountStatusType) {
+        jTextFieldAccountStatusType.setText(accountStatusType);
+    }
+
+    /**
+     * Metoda cisti vsechny vstupni formulare, formular pro datum nastavuje na
+     * aktualni datum a u comboBoxu nastavuje aktualni vybranou polozku na
+     * prvni polozku daneho comboBoxu.
+     */
+    protected void clearFields() {
+        Validator.clearTextField(jTextFieldName);
+        Validator.clearTextField(jTextFieldTable);
+        Validator.clearTextField(jTextFieldPerson);
+        Validator.clearTextField(jTextFieldDiscountType);
+        Validator.clearTextField(jTextFieldAccountStatusType);
+    }
+
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        billPanel = new BackgroundPanel();
+        jTextFieldName = new javax.swing.JTextField();
+        jTextFieldTable = new javax.swing.JTextField();
+        jTextFieldPerson = new javax.swing.JTextField();
+        jTextFieldDiscountType = new javax.swing.JTextField();
+        jTextFieldAccountStatusType = new javax.swing.JTextField();
+        jLabelInfoText = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jButtonOK = new javax.swing.JButton();
+        jButtonDelete = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jButtonAssignToTable = new javax.swing.JButton();
+        jButtonAssignToPerson = new javax.swing.JButton();
+        jButtonChooseDiscountType = new javax.swing.JButton();
+        jButtonChooseAccountStatusType = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabelTitle = new javax.swing.JLabel();
+
+        setBackground(javax.swing.UIManager.getDefaults().getColor("CheckBox.light"));
+
+        billPanel.setBackground(javax.swing.UIManager.getDefaults().getColor("CheckBox.light"));
+        billPanel.setOpaque(false);
+
+        jTextFieldName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTextFieldName.setMargin(new Insets(10, 10, 10, 10));
+
+        jTextFieldTable.setEditable(false);
+        jTextFieldTable.setBorder(null);
+
+        jTextFieldPerson.setEditable(false);
+        jTextFieldPerson.setBorder(null);
+
+        jTextFieldDiscountType.setEditable(false);
+        jTextFieldDiscountType.setBorder(null);
+
+        jTextFieldAccountStatusType.setEditable(false);
+        jTextFieldAccountStatusType.setBorder(null);
+
+        jLabelInfoText.setFont(new java.awt.Font("Calibri", 1, 22));
+        jLabelInfoText.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelInfoText.setText("Nový účet");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jLabel1.setText("Ke stolu:");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jLabel2.setText("K osobě:");
+
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14));
+        jLabel3.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel3.setText("Název účtu:");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jLabel4.setText("Sleva:");
+
+        jButtonOK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/ok.png"))); // NOI18N
+        jButtonOK.setText("  OK");
+        jButtonOK.setToolTipText("Vložit účet");
+        jButtonOK.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jButtonOK.setMargin(new java.awt.Insets(2, 0, 2, 0));
+        jButtonOK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOKActionPerformed(evt);
+            }
+        });
+
+        jButtonDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/ko.png"))); // NOI18N
+        jButtonDelete.setText("  Vymazat");
+        jButtonDelete.setToolTipText("Vymazat pole účtu");
+        jButtonDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDeleteActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jLabel5.setText("Stav:");
+
+        jPanel2.setOpaque(false);
+
+        jButtonAssignToTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/left.png"))); // NOI18N
+        jButtonAssignToTable.setText("Stůl");
+        jButtonAssignToTable.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButtonAssignToTable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAssignToTableActionPerformed(evt);
+            }
+        });
+
+        jButtonAssignToPerson.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/left.png"))); // NOI18N
+        jButtonAssignToPerson.setText("Osoba");
+        jButtonAssignToPerson.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButtonAssignToPerson.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jButtonAssignToPerson.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAssignToPersonActionPerformed(evt);
+            }
+        });
+
+        jButtonChooseDiscountType.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/left.png"))); // NOI18N
+        jButtonChooseDiscountType.setText("Sleva");
+        jButtonChooseDiscountType.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButtonChooseDiscountType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonChooseDiscountTypeActionPerformed(evt);
+            }
+        });
+
+        jButtonChooseAccountStatusType.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/left.png"))); // NOI18N
+        jButtonChooseAccountStatusType.setText("Stav");
+        jButtonChooseAccountStatusType.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButtonChooseAccountStatusType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonChooseAccountStatusTypeActionPerformed(evt);
+            }
+        });
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/left-red.png"))); // NOI18N
+        jButton1.setText("Název");
+        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButtonAssignToTable, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonAssignToPerson, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButtonChooseDiscountType, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButtonChooseAccountStatusType, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonAssignToTable, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonAssignToPerson, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonChooseDiscountType, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonChooseAccountStatusType, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout billPanelLayout = new javax.swing.GroupLayout(billPanel);
+        billPanel.setLayout(billPanelLayout);
+        billPanelLayout.setHorizontalGroup(
+            billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(billPanelLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jTextFieldName, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelInfoText)
+                    .addGroup(billPanelLayout.createSequentialGroup()
+                        .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, billPanelLayout.createSequentialGroup()
+                                .addComponent(jButtonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonOK, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(billPanelLayout.createSequentialGroup()
+                                .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(billPanelLayout.createSequentialGroup()
+                                        .addComponent(jLabel5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                                        .addComponent(jTextFieldAccountStatusType, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(billPanelLayout.createSequentialGroup()
+                                        .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel4)
+                                            .addComponent(jLabel2))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(jTextFieldPerson, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextFieldDiscountType, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextFieldTable, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(15, 15, 15)))
+                        .addGap(28, 28, 28)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28))
+        );
+        billPanelLayout.setVerticalGroup(
+            billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(billPanelLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabelInfoText)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addGap(4, 4, 4)
+                .addComponent(jTextFieldName, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldTable, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldPerson, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(39, 39, 39)
+                .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldDiscountType, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldAccountStatusType, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addGap(31, 31, 31)
+                .addGroup(billPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonOK, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33))
+            .addGroup(billPanelLayout.createSequentialGroup()
+                .addGap(59, 59, 59)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(99, Short.MAX_VALUE))
+        );
+
+        jLabelTitle.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelTitle.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabelTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTitle.setText("Vytvořit nový účet");
+        jLabelTitle.setOpaque(true);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabelTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 902, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(billPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(391, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabelTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(billPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonAssignToPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAssignToPersonActionPerformed
+        try {
+            choosePersonDialog = new ChoosePersonDialog(parent, true, this);
+            choosePersonDialog.setLocation(600,220);
+            choosePersonDialog.setVisible(true);
+            refresh();
+        } catch (FileNotFoundException fnfe) {
+            JOptionPane.showMessageDialog(this, "Konfigurační soubor \"" + ConfigParser.getConfigFile() + "\" nebyl nalezen.", "Chyba", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this, "Nelze navázat spojení se serverem.", "Chyba komunikace", JOptionPane.ERROR_MESSAGE);
+        }
+}//GEN-LAST:event_jButtonAssignToPersonActionPerformed
+
+    private void jButtonAssignToTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAssignToTableActionPerformed
+       
+        try {
+            chooseTableDialog = new ChooseTableDialog(parent, true, this);
+            chooseTableDialog.setLocation(600, 220);
+            chooseTableDialog.setVisible(true);
+            refresh();
+        } catch (FileNotFoundException fnfe) {
+            JOptionPane.showMessageDialog(this, "Konfigurační soubor \"" + ConfigParser.getConfigFile() + "\" nebyl nalezen.", "Chyba", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this, "Nelze navázat spojení se serverem.", "Chyba komunikace", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButtonAssignToTableActionPerformed
+
+    private void jButtonChooseDiscountTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonChooseDiscountTypeActionPerformed
+        try {
+            chooseDiscountTypeDialog = new ChooseDiscountTypeDialog(parent, true, this);
+            chooseDiscountTypeDialog.setLocation(600, 220);
+            chooseDiscountTypeDialog.setVisible(true);
+            refresh();
+        } catch (FileNotFoundException fnfe) {
+            JOptionPane.showMessageDialog(this, "Konfigurační soubor \"" + ConfigParser.getConfigFile() + "\" nebyl nalezen.", "Chyba", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this, "Nelze navázat spojení se serverem.", "Chyba komunikace", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButtonChooseDiscountTypeActionPerformed
+
+    private void jButtonChooseAccountStatusTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonChooseAccountStatusTypeActionPerformed
+        try {
+            chooseAccountStatusTypeDialog = new ChooseAccountStatusTypeDialog(parent, true, this);
+            chooseAccountStatusTypeDialog.setLocation(600,220);
+            chooseAccountStatusTypeDialog.setVisible(true);
+            refresh();
+        } catch (FileNotFoundException fnfe) {
+            JOptionPane.showMessageDialog(this, "Konfigurační soubor \"" + ConfigParser.getConfigFile() + "\" nebyl nalezen.", "Chyba", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this, "Nelze navázat spojení se serverem.", "Chyba komunikace", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButtonChooseAccountStatusTypeActionPerformed
+
+    private void jButtonOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOKActionPerformed
+        int i = isValidInput();
+        switch (i) {
+            case 0:
+                String name = jTextFieldName.getText();
+
+                boolean isOK;
+                try {
+                    String status = jTextFieldAccountStatusType.getText();
+                    int statusId = ServiceFacade.getInstance().getAccountStatusTypeByName(status).getAccountStatusTypeId();
+                    String stul = jTextFieldTable.getText();
+                    int stulId = 0;
+                    if (!stul.equals("")) {
+                        stulId = Integer.parseInt(stul);
+                    }
+                    String user = jTextFieldPerson.getText();
+                    int userId = 0;
+                    if (!user.equals("")) {
+                        userId = ServiceFacade.getInstance().getUserByUsername(user).getUserId();
+                    }
+                    String discountType = jTextFieldDiscountType.getText();
+                    int discountTypeId = 0;
+                    if (!discountType.equals("")) {
+                        discountTypeId = ServiceFacade.getInstance().getDiscountTypeByName(discountType).getDiscountTypeId();
+                    }
+                    isOK = ServiceFacade.getInstance().createAccount(name, statusId, stulId, userId, discountTypeId);
+                    if (!isOK) {
+                        JOptionPane.showMessageDialog(this, "Účet nemohl být vytvořen, protože účet se stejným názvem již existuje.", "Účet", JOptionPane.INFORMATION_MESSAGE);
+                        return;
+                    }
+                } catch (FileNotFoundException fnfe) {
+                    JOptionPane.showMessageDialog(this, "Konfigurační soubor \"" + ConfigParser.getConfigFile() + "\" nebyl nalezen.", "Chyba", JOptionPane.ERROR_MESSAGE);
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(this, "Nelze navázat spojení se serverem.", "Chyba komunikace", JOptionPane.ERROR_MESSAGE);
+                }
+                clearFields();
+                break;
+            case 1:
+                JOptionPane.showMessageDialog(this, "Údaj o názvu účtu musí být vyplněn.", "Nový účet", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case 2:
+                JOptionPane.showMessageDialog(this, "Údaj o stavu účtu musí být vyplněn.", "Nový účet", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            default:
+                break;
+        }
+}//GEN-LAST:event_jButtonOKActionPerformed
+
+    private void jButtonDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDeleteActionPerformed
+        clearFields();
+}//GEN-LAST:event_jButtonDeleteActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        KeyboardDialog keyboard = new KeyboardDialog(parent, true);
+        keyboard.setLocation(600, 220);
+        keyboard.setTextField(jTextFieldName);
+       // this.setEnabled(false);
+        keyboard.setVisible(true);
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel billPanel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonAssignToPerson;
+    private javax.swing.JButton jButtonAssignToTable;
+    private javax.swing.JButton jButtonChooseAccountStatusType;
+    private javax.swing.JButton jButtonChooseDiscountType;
+    private javax.swing.JButton jButtonDelete;
+    private javax.swing.JButton jButtonOK;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabelInfoText;
+    private javax.swing.JLabel jLabelTitle;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTextField jTextFieldAccountStatusType;
+    private javax.swing.JTextField jTextFieldDiscountType;
+    private javax.swing.JTextField jTextFieldName;
+    private javax.swing.JTextField jTextFieldPerson;
+    private javax.swing.JTextField jTextFieldTable;
+    // End of variables declaration//GEN-END:variables
+
+
+//  public BackgroundPanel()
+//  {
+//
+//  }
+
+  @Override
+  protected void paintComponent(Graphics g)
+  {
+    super.paintComponent(g);
+    if (image != null)
+      g.drawImage(image.getImage(), 0,0,this);
+  }
+
+}

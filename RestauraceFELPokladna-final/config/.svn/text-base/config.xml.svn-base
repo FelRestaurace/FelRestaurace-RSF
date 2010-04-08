@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><restaurationFELadmin>
+  <primaryServerIP>127.000.000.001</primaryServerIP>
+  <secondaryServerIP>127.000.000.001</secondaryServerIP>
+  <money>Kč</money>
+  <printingTemplatesDir>E:\Škola\Letní semestr 2008-2009\Bakalářská práce\Implementace\RestauraceFELManager\config\templates</printingTemplatesDir>  
+</restaurationFELadmin>

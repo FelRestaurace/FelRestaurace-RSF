@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/service
+END
+ConfigParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/service/ConfigParser.java
+END
+Printer.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/service/Printer.java
+END
+ServiceFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/service/ServiceFacade.java
+END
+Validator.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/service/Validator.java
+END
+CodeList.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/restaurace/!svn/ver/55/RestauraceFELPokladna/src/service/CodeList.java
+END
+ResultTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/restaurace/!svn/ver/82/RestauraceFELPokladna/src/service/ResultTableModel.java
+END
+IServiceFacadeCash.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/restaurace/!svn/ver/77/RestauraceFELPokladna/src/service/IServiceFacadeCash.java
+END
